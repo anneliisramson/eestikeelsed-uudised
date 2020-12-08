@@ -1,2 +1,2 @@
-# news
-News classification and fake news detector
+# uudised
+Eestikeelsete uudiste meelsus, klassifitseerimine ja valedetektor
