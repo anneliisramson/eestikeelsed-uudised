@@ -1,2 +1,2 @@
 # uudised
-Eestikeelsete uudiste meelsus, klassifitseerimine ja valedetektor
+Eestikeelsete uudiste meelsus, klassifitseerimine, väär ja tõene info
