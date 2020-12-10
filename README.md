@@ -1,5 +1,4 @@
-# uudised
-Eestikeelsete uudiste kogumine veebist, meelsus, klassifitseerimine, väär ja tõene info.
+# Eestikeelsete uudiste kogumine veebist, meelsus, klassifitseerimine, väär ja tõene info.
 
 Läbitud etapid:
 01 Veebiämblikud veebilehelt linkide "kraapimiseks": väljund kolm lingikogu
