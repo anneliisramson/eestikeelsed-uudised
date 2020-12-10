@@ -30,7 +30,7 @@ Lühike ülevaade projekti etappidest ja tööfailidest
     fail:
     05 Klasterdamine.ipynb
 
-06 Väärinfo ja tõese info eristamine ja uurimine
+06 Väärinfo ja tõese info eristamine ning uurimine
 
     fail:
     06 Väärinfo_ja_tõese_info_uurimine.ipynb
