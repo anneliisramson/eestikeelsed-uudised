@@ -1,6 +1,7 @@
 # Eestikeelsete uudiste kogumine veebist, meelsus, klassifitseerimine, väär ja tõene info
 
 Lühike ülevaade projekti etappidest ja tööfailidest
+
 01 Veebiämblikud veebilehelt linkide "kraapimiseks": väljund kolm lingikogu
 
     failid:
