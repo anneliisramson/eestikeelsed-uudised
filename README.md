@@ -1,5 +1,7 @@
 # Eestikeelsete uudiste kogumine veebist, meelsus, klassifitseerimine, väär ja tõene info
 
+Projekti vahekokkuvõte 10.12.2020
+
 Lühike ülevaade projekti etappidest ja tööfailidest
 
 01 Veebiämblikud veebilehelt linkide "kraapimiseks": väljund kolm lingikogu
