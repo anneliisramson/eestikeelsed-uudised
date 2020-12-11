@@ -116,7 +116,7 @@ Projekti etapid, sisendid ja väljundid
                  
     või
     # vaikimisi parameetrid
-    pipe = Pipeline([('vect', CountVectorizer())
+    pipe = Pipeline([('vect', CountVectorizer()),
                  ('tfidf', TfidfTransformer()),
                  ('model', LogisticRegression())])
                  
@@ -127,6 +127,6 @@ Projekti etapid, sisendid ja väljundid
                  ('model', LogisticRegression())])
     või
     teksti sõnestamiseks on kasutatud lemmasid
-     pipe = Pipeline([('vect', CountVectorizer(tokenizer = lemmatize_with_estnltk),
+    pipe = Pipeline([('vect', CountVectorizer(tokenizer = lemmatize_with_estnltk),
                  ('tfidf', TfidfTransformer()),
                  ('model', LogisticRegression())])
