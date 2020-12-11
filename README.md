@@ -55,9 +55,11 @@ Projekti etapid, sisendid ja väljundid
     02 telegram_andmekorje_rubriigid.ipynb
     02 uueduudised_andmekorje_rubriigid.ipynb
     
-    sisendfail: html-lingikogu;  
-    NB! Eelmises punktis saadud html-lingikogus võib olla katkisi linke. Ma ei leidnud praegu muud lahendust kui katkiste linkide käsitsi eemaldamine.
-    NB! Koodi töö õigeks jätkamiseks saab kasutada parandatud lingikogu_muudetud.csv
+    sisendfail: eelmises punktis saadud html-lingikogu;  
+    NB! html-lingikogus võib olla katkisi linke. Kokkukraabitud veebilehed võivad olla erineva html-struktuuriga.
+    NB! Ma ei leidnud praegu muud lahendust kui katkiste ja vale struktuuriga linkide käsitsi eemaldamine.
+  
+    NB! Koodi töö õigeks jätkamiseks saab kasutada sisendfailina parandatud lingikogu_muudetud.csv
     väljund ekraanile: andmetabel, mis sisaldab iga uudise kohta title, text, subject, date, url
                        sõnapilv (saab muuta stoppsõnu, sõnapilves kasutatavaid sõnaliike)
     väljundfailid: uudisteandmed (data_delfi.csv; data_telegram_csv; data_uueduudised.csv), igale uudisele vastab title, text, subject, date, url
