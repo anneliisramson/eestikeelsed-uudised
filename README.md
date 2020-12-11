@@ -28,8 +28,8 @@ Projekti etapid, sisendid ja väljundid
     Telegram telebot.py
     Uued Uudised uueduudised.py
     
-    sisend: veebilehe aadress
-    väljundfail: html-lingikogu csv-formaadis
+    sisend: Delfi, Telegrami või Uued Uudised veebilehe aadress
+    väljundfail: veebilehtedelt leitud uudiste html-lingikogud csv-formaadis
 
 02 Andmekorje lingikogude linkidelt
 
@@ -47,7 +47,7 @@ Projekti etapid, sisendid ja väljundid
 
     03 andmete_liitmine.ipynb
     
-    sisendfailid: erinevate väljaannete uudisteandmed;
+    sisendfailid: uudisteandmed (data_delfi.csv; data_telegram_csv; data_uueduudised.csv);
     väljund ekraanile: uudisartiklite jaotus väljaannete kaupa;
                        sõnapilv (saab muuta stoppsõnu, sõnapilves kasutatavaid sõnaliike)
     väljundfail: ühendatud uudisteandmed csv-formaadis (title, text, subject, date, url)
@@ -56,7 +56,7 @@ Projekti etapid, sisendid ja väljundid
 
     04 Meelsus.ipynb
     
-    sisendfail: ühendatud uudisteandmed; estonian-emotion-lexicon.csv
+    sisendfailid: ühendatud uudisteandmed; estonian-emotion-lexicon.csv
     väljund ekraanile: artiklite meelsusega tabel (tabelis on uudise kohta arvutatud karakteristikud)
     väljundfail: artiklite meelsusega tabel csv-formaadis
     
@@ -72,16 +72,13 @@ Projekti etapid, sisendid ja väljundid
 
     06 Väärinfo_ja_tõese_info_uurimine.ipynb
     
-    sisendfailid: väärinfo ja tõene info eraldatud failides
-    väljund ekraanile: väärinfo ja tõese info sõnapilved; sagedate sõnade jaotus, sõnade sarnasus Wornetis, sõnade sarnasused Word2Vec mudeli abil)
+    sisendfailid: fake.csv; true.csv
+    väljund ekraanile: väärinfo ja tõese info sõnapilved; sagedate sõnade jaotus, sõnade sarnasus Wordnetis, sõnade sarnasused Word2Vec mudeli abil)
     
     
 07 Mudelid: logistiline regressioon, otsustuspuu, juhuslik mets, passiivne agressiivne klassifitseerija
 
     07 Väärinfo_mudelid.ipynb
-    sisendfailid: väärinfo ja tõene info eraldatud failides
-    väljund: mudeli täpsus ja segadusmaatriks
-    
-
-
-
+    sisendfailid: fake.csv; true.csv
+    väljund: mudeli täpsus ja segadusmaatriks (saab muuta mudelite parameetreid, stoppsõnu, 
+                                               kasutada kaht meetodit teksti sõnestamiseks lemmatize_with_estnltk või tokenize_with_estnltk)
