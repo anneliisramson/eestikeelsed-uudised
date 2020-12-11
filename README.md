@@ -111,7 +111,8 @@ Projekti etapid, sisendid ja väljundid
     07 Väärinfo_mudelid.ipynb
     sisendfailid: fake.csv; true.csv
     väljund: mudeli täpsus ja segadusmaatriks (saab muuta mudelite parameetreid, stoppsõnu, 
-                                               kasutada kaht meetodit teksti sõnestamiseks lemmatize_with_estnltk või tokenize_with_estnltk)
+                                               kasutada kaht meetodit teksti sõnestamiseks lemmatize_with_estnltk või tokenize_with_estnltk
+                                               
     Näiteks:
     # teksti sõnestamiseks on kasutatud lemmasid ja stopsõnu
     pipe = Pipeline([('vect', CountVectorizer(tokenizer = lemmatize_with_estnltk, stop_words = stopsõnad_uus)),
