@@ -45,7 +45,7 @@ Projekti etapid, sisendid ja väljundid
     soovi korral saab start_urls muuta
    
     väljundfaili nimi määratakse  failides settings.py (näiteks FEED_URI = "uueduudised_rubriigid_arhiiv.csv")
-    väljund: veebilehtedelt leitud uudiste html-lingikogud csv-formaadis (fail tekib vastava spidersi kausta)
+    väljund: veebilehtedelt leitud uudiste lingikogud csv-formaadis (fail tekib vastava spidersi kausta)
     
 02 Andmekorje lingikogude linkidelt
 
@@ -55,7 +55,7 @@ Projekti etapid, sisendid ja väljundid
     02 telegram_andmekorje_rubriigid.ipynb
     02 uueduudised_andmekorje_rubriigid.ipynb
     
-    sisendfail: eelmises punktis saadud html-lingikogu;  
+    sisendfail: eelmises punktis saadud lingikogu;  
     NB! html-lingikogus võib olla katkisi linke. Kokkukraabitud veebilehed võivad olla erineva html-struktuuriga.
     NB! Ma ei leidnud praegu muud lahendust kui katkiste ja vale struktuuriga linkide käsitsi eemaldamine.
   
