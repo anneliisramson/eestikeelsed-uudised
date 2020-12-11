@@ -3,7 +3,7 @@ import scrapy
 
 class NewsbotSpider(scrapy.Spider):
     name = 'newsbot'
-    allowed_domains = ['www.delfi.ee']
+    #allowed_domains = ['www.delfi.ee']
     start_urls = ['https://www.delfi.ee/archive/?tod=03.12.2020&fromd=01.01.2020&channel=1&category=13&query=']
     #start_urls = ['https://www.delfi.ee/archive/?tod=08.12.2020&fromd=01.01.2020&channel=14&category=19350036&query=teadus',
                  #'https://www.delfi.ee/archive/?tod=08.12.2020&fromd=01.01.2020&channel=21&category=0&query=majandus',
