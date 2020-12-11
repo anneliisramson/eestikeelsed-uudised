@@ -126,12 +126,12 @@ Projekti etapid, sisendid ja väljundid
                  ('model', LogisticRegression())])
                  
     või
-    #teksti sõnestamiseks on kasutatud sõnasid ja stopsõnu
+    #teksti sõnestamiseks on kasutatud sõnu ja stopsõnu
     pipe = Pipeline([('vect', CountVectorizer(tokenizer = tokenize_with_estnltk, stop_words = stopsõnad_uus)),
                  ('tfidf', TfidfTransformer()),
                  ('model', LogisticRegression())])
     või
-    teksti sõnestamiseks on kasutatud lemmasid
-    pipe = Pipeline([('vect', CountVectorizer(tokenizer = lemmatize_with_estnltk),
+    teksti sõnestamiseks on kasutatud ainult lemmasid
+    pipe = Pipeline([('vect', CountVectorizer(tokenizer = lemmatize_with_estnltk)),
                  ('tfidf', TfidfTransformer()),
                  ('model', LogisticRegression())])
