@@ -9,10 +9,15 @@ conda install -c estnltk -c conda-forge estnltk=1.6.7b
 3. Installida EstNLTK-d sisaldavas virtuaalkeskkonnas Jupyter Notebook käsuga:
 conda install jupyter
 3. Installida vajalikud teegid:
+
 conda install scikit-learn
+
 conda install tqdm
+
 conda install -c conda-forge scrapy
+
 conda install bs4
+
 kas veel mõni?
 
 Projekti etapid, sisendid ja väljundid
