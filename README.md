@@ -62,6 +62,8 @@ Projekti etapid, sisendid ja väljundid
     NB! Koodi töö õigeks jätkamiseks saab kasutada sisendfailina parandatud lingikogu_muudetud.csv
     väljund ekraanile: andmetabel, mis sisaldab iga uudise kohta title, text, subject, date, url
                        sõnapilv (saab muuta stoppsõnu, sõnapilves kasutatavaid sõnaliike)
+    sõnaliikide tähendused:
+    https://github.com/estnltk/estnltk/blob/version_1.6/tutorials/nlp_pipeline/A_02_morphology_tables.ipynb
     väljundfailid: uudisteandmed (data_delfi.csv; data_telegram_csv; data_uueduudised.csv), igale uudisele vastab title, text, subject, date, url
                    sõnapilv png-formaadis
                    
