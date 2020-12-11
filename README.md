@@ -23,6 +23,7 @@ kas veel mõni?
 Projekti etapid, sisendid ja väljundid
 
 01 Veebiämblikud veebilehelt linkide "kraapimiseks"
+
     Scrapy juhend: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
 
     Delfist linkide kogumiseks käsureale (vastava spidersi kaustas):
@@ -47,6 +48,7 @@ Projekti etapid, sisendid ja väljundid
     väljund: veebilehtedelt leitud uudiste html-lingikogud csv-formaadis (fail tekib vastava spidersi kausta)
     
 02 Andmekorje lingikogude linkidelt
+
     Järgnevad failid käivitada Jupyter Notebookis
     
     02 delfi_andmetekorje.ipynb
