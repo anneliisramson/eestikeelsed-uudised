@@ -43,9 +43,18 @@ Lühike ülevaade projekti etappidest ja tööfailidest
     fail:
     07 Väärinfo_mudelid.ipynb
     
-Enne koodi kasutamist:
+Kasutusjuhend skriptide jooksutamiseks Jupyter Notebookis:
 1. Installida Anaconda (https://docs.anaconda.com/anaconda/install/)
 2. Installida EstNLTK käsuga:
 conda install -c estnltk -c conda-forge estnltk=1.6.7b
 3. Installida EstNLTK-d sisaldavas virtuaalkeskkonnas Jupyter Notebook käsuga:
 conda install jupyter
+3. Installida vajalikud teegid:
+conda install scikit-learn
+conda install tqdm
+conda install -c conda-forge scrapy
+kas veel mõni?
+
+Oodatavad väljundid:
+01 samm: lingikogu.csv
+02 samm: 
