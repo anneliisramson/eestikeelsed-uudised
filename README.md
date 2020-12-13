@@ -26,46 +26,62 @@ Projekti etapid, sisendid ja väljundid
 
     Scrapy juhend: https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
 
-    Delfist linkide kogumiseks käsureale (vastava spidersi kaustas):
-    scrapy crawl newsbot
+    1) Jupyteri keskkonnas avada New -->Terminal (paremal ülanurgas)
+    2) liikuda vastavasse kausta:
+        a) Delfi jaoks kausta
+        .../delfiscraper/delfiscraper/spiders
+        käivitada: scrapy crawl newsbot
+        
+        väljundina tekib samasse kausta fail: delfi_päevauudised_2020_03122020.csv
+        
+        b) Telegrami jaoks kausta
+        .../telegram/telegram/spiders
+        käivitada: scrapy crawl telebot
+        
+        väljundina tekib samasse kausta fail: telegram_rubriigid_arhiiv.csv
     
-    Telegram linkide kogumiseks käsureale (vastava spidersi kaustas):
-    scrapy crawl telebot
+        c) Uued Uudised jaoks kausta
+        ...uued_uudised_scraper/uued_uudised_scraper/spiders
+        käivitada: scrapy crawl uueduudised
+        
+        väljundina tekib samasse kausta fail: uueduudised_rubriigid_arhiiv.csv
+        
     
-    Uued Uudised linkide kogumiseks käsureale (vastava spidersi kaustas):
-    scrapy crawl uueduudised
-    
-    failides newsbot.py, telebot.py või uueduudised.py määrab start_urls veebilehe, millelt alustatakse "kraapimist"
+    Failides newsbot.py, telebot.py või uueduudised.py määrab start_urls veebilehe, millelt alustatakse "kraapimist".
     Delfi puhul alustatakse kraapimist lehelt 'https://www.delfi.ee/archive/?tod=03.12.2020&fromd=01.01.2020&channel=1&category=13&query=']
     
     Telegrami puhul alustatakse kraapimist lehtedelt 'https://www.telegram.ee/arvamus', 'https://www.telegram.ee/eesti','https://www.telegram.ee/maailm',                   'https://www.telegram.ee/nwo', 'https://www.telegram.ee/teadus-ja-tulevik'
     
     Uued Uudised puhul alustatakse kraapimist lehtedelt 'https://uueduudised.ee/rubriik/arvamus/','https://uueduudised.ee/rubriik/uudis/eesti/', 'https://uueduudised.ee/rubriik/uudis/maailm/', 'https://uueduudised.ee/rubriik/majandus/'
     
-    soovi korral saab start_urls muuta
+    Soovi korral saab start_urls muuta.
    
-    väljundfaili nimi määratakse  failides settings.py (näiteks FEED_URI = "uueduudised_rubriigid_arhiiv.csv")
-    väljund: veebilehtedelt leitud uudiste lingikogud csv-formaadis (fail tekib vastava spidersi kausta)
+    Väljundfaili nimi määratakse  failides settings.py (näiteks FEED_URI = "uueduudised_rubriigid_arhiiv.csv")
+    Väljundid: veebilehtedelt leitud uudiste lingikogud csv-formaadis (fail tekib vastava spidersi kausta)
     
 02 Andmekorje lingikogude linkidelt
 
-    Järgnevad failid käivitada Jupyter Notebookis
+    Järgnevad failid avada Jupyter Notebookis.
     
     02 delfi_andmetekorje.ipynb
     02 telegram_andmekorje_rubriigid.ipynb
     02 uueduudised_andmekorje_rubriigid.ipynb
     
-    sisendfail: eelmises punktis saadud lingikogu;  
+    Failis olevaid koodiblokke käivitatakse klahvikombinatsiooniga ctrl+enter. 
+    
     NB! html-lingikogus võib olla katkisi linke. Kokkukraabitud veebilehed võivad olla erineva html-struktuuriga.
     NB! Ma ei leidnud praegu muud lahendust kui katkiste ja vale struktuuriga linkide käsitsi eemaldamine.
-  
-    NB! Koodi töö õigeks jätkamiseks saab kasutada sisendfailina parandatud lingikogu_muudetud.csv
-    väljund ekraanile: andmetabel, mis sisaldab iga uudise kohta title, text, subject, date, url
-                       sõnapilv (saab muuta stoppsõnu, sõnapilves kasutatavaid sõnaliike)
-    sõnaliikide tähendused:
+    NB! Koodi töö õigeks jätkamiseks saab kasutada sisendfailina parandatud lingikogu_muudetud.csv.
+                
+    Väljund ekraanile: 1) andmetabel, mis sisaldab iga uudise kohta title, text, subject, date, url
+                       2) sõnapilv (saab muuta stoppsõnu, sõnapilves kasutatavaid sõnaliike)
+                       
+    Sõnaliikide tähendused:
     https://github.com/estnltk/estnltk/blob/version_1.6/tutorials/nlp_pipeline/A_02_morphology_tables.ipynb
-    väljundfailid: uudisteandmed (data_delfi.csv; data_telegram_csv; data_uueduudised.csv), igale uudisele vastab title, text, subject, date, url
-                   sõnapilv png-formaadis
+    
+    Failis olevaid koodiblokke käivitatakse klahvikombinatsiooniga ctrl+enter.
+    Väljundfailid: 1) data_delfi.csv; data_telegram_csv; data_uueduudised.csv, igale uudisele vastab title, text, subject, date, url
+                   2) sõnapilved png-formaadis
                    
 03 Andmete liitmine
 
